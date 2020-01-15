@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'planigPoker';
+  name: string;
+  projectNum: string;
+  estimate: string;
+
+  estimating(est) {
+    this.estimate = est;
+    console.log(this.estimate);
+  }
+
+
+
 }

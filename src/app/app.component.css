@@ -1,0 +1,67 @@
+
+
+.myButton {
+  width: 72px;
+  height: 120px;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color: #2dabf9;
+	border-radius:4px;
+	border: 2px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffffff;
+	font-family:Arial;
+	font-size: 28px;
+	padding: 32px 5px;
+	text-decoration:none;
+	text-shadow: 0px 1px 0px #263666;
+}
+
+.mainClass {
+  background:linear-gradient(to bottom, #161516 5%, #052746 100%);
+}
+.sendButton {
+  background-color:#e61c1c;
+	border-radius:28px;
+	border:1px solid #000a01;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #052101;
+}
+
+.cardTable {
+  padding: 15px 15px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+input {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 3px solid #050505;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
+  font: normal normal bold 16px/normal "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: rgba(2,2,2,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgb(214, 225, 235);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
