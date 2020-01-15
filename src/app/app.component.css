@@ -40,7 +40,13 @@
   vertical-align: middle;
   align-items: center;
 }
-
+.tableBorder{
+  border: 3px solid #e9e4e4;
+  border-radius: 21px;
+  padding: 30px 70px;
+  vertical-align: middle;
+  align-items: center;
+}
 input {
   display: inline-block;
   -webkit-box-sizing: content-box;
