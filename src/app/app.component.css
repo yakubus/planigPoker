@@ -1,12 +1,65 @@
+.container{
+  display: flex; justify-content: space-around;
+}
 
+#estimate-container:after {
+  display:block;
+  clear:both;
+  align-items: center;
+  text-align: center;
+  display: inline-block
+}
 
+#estimate-items {
+  margin:15px;
+  padding:5px;
+  align-items: center;
+  text-align: center;
+}
+#ngname{
+  background-color: #169705;
+  border-radius:12px;
+  border: 2px solid #0a4602;
+  width: 100%;
+  margin-top: 3px;
+  padding:10px;
+  align-items: center;
+}
+#estimate-value{
+  width: 100%;
+  background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius:12px;
+  border: 2px solid #0b0e07;
+  margin:5px;
+  padding:5px;
+  align-items: center;
+  text-align: center;
+  font-family:Arial;
+	font-size: 16px;
+}
+#divCard{
+  width: 140px;
+  height: 100px;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color: #2dabf9;
+	border-radius:12px;
+  border: 2px solid #0b0e07;
+  display:inline-block;
+  font-size: 65px;
+  padding: 32px 5px;
+  text-align: center;
+  vertical-align: middle;
+
+}
 .myButton {
   width: 72px;
   height: 120px;
 	box-shadow:inset 0px -3px 7px 0px #29bbff;
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
 	background-color: #2dabf9;
-	border-radius:4px;
+	border-radius:12px;
 	border: 2px solid #0b0e07;
 	display:inline-block;
 	cursor:pointer;
@@ -47,6 +100,9 @@
   vertical-align: middle;
   align-items: center;
 }
+
+
+
 input {
   display: inline-block;
   -webkit-box-sizing: content-box;
@@ -68,6 +124,10 @@ input {
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+ul{
+  list-style-type: none;
 }
 
 

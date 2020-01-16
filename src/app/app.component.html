@@ -1,51 +1,154 @@
 <!--Header-->
-<table class="tableBorder">
-    <td>
-  <div>
-    <h1>PlaningPoker</h1>
-  </div>
-
-  <!--Pojec/User data-->
-  <p>
-    Name <br/> <input [(ngModel)]="name">
-  </p>
-  <p>
-    Project number <br/> <input [(ngModel)]="projectNum">
-  </p>
-  <!--Buttpns-->
-  <div>
-    <table>
-        <td>
-          <table class="cardTable">
-            <tr>
-              <td class="cardTable">
-                  <button class="myButton" (click)="estimating(1)">1</button>
-              </td>
-              <td class="cardTable">
-                  <button class="myButton" (click)="estimating(2)">2</button>
-              </td>
-              <td class="cardTable">
-                <button class="myButton" (click)="estimating(3)">3</button>
-              </td>
-            </tr>
-            <tr>
-
+<div class="container">
+  <!--User Panel-->
+  <table class="tableBorder">
+      <td>
+    <div>
+      <h1>PlaningPoker</h1>
+    </div>
+    <!--Pojec/User data-->
+    <p>
+      Name <br/> <input [(ngModel)]="name">
+    </p>
+    <p>
+      Project number <br/> <input [(ngModel)]="projectNum">
+    </p>
+    <!--Buttpns-->
+    <div>
+      <table>
+          <td>
+            <table class="cardTable">
+              <tr>
                 <td class="cardTable">
-                    <button class="myButton" (click)="estimating(5)">5</button>
+                    <button class="myButton" (click)="estimating(1)">1</button>
                 </td>
-
                 <td class="cardTable">
-                    <button class="myButton" (click)="estimating(8)">8</button>
+                    <button class="myButton" (click)="estimating(2)">2</button>
+                </td>
+                <td class="cardTable">
+                  <button class="myButton" (click)="estimating(3)">3</button>
                 </td>
               </tr>
-          </table>
-        </td>
-        <td>
-            {{estimate}}
-        </td>
-      </table>
-      <button class="sendButton">send</button>
+              <tr>
+
+                  <td class="cardTable">
+                      <button class="myButton" (click)="estimating(5)">5</button>
+                  </td>
+
+                  <td class="cardTable">
+                      <button class="myButton" (click)="estimating(8)">8</button>
+                  </td>
+                </tr>
+            </table>
+          </td>
+          <td>
+              {{estimate}}
+          </td>
+        </table>
+        <button class="sendButton">send</button>
+  </div>
+  </td>
+  </table>
+  <!--Admin Panel-->
+  <div style="clear: both;">
+      <div id="estimate-container" class="container">
+        <div id="estimate-items">
+          <div id="estimate-value">
+            <h1>1</h1>
+            count: {{est1List.length}}
+          </div>
+          <ng-container *ngIf="est1List.length > 0;">
+            <ul>
+              <li *ngFor="let ngname of est1List">
+                <div id="ngname">
+                 {{ngname}}
+                </div>
+              </li>
+            </ul>
+          </ng-container>
+        </div>
+        <div id="estimate-items">
+          <div id="estimate-value">
+            <h1>2</h1>
+            count: {{est2List.length}}
+          </div>
+          <ng-container *ngIf="est2List.length > 0;">
+            <ul>
+              <li *ngFor="let ngname of est2List">
+                <div id="ngname">
+                 {{ngname}}
+                </div>
+              </li>
+            </ul>
+          </ng-container>
+        </div>
+        <div id="estimate-items">
+          <div id="estimate-value">
+            <h1>3</h1>
+            count: {{est3List.length}}
+          </div>
+          <ng-container *ngIf="est3List.length > 0;">
+            <ul>
+              <li *ngFor="let ngname of est3List">
+                <div id="ngname">
+                  {{ngname}}
+                 </div>
+              </li>
+            </ul>
+          </ng-container>
+        </div>
+        <div id="estimate-items">
+          <div id="estimate-value">
+            <h1>5</h1>
+            count: {{est5List.length}}
+          </div>
+          <ng-container *ngIf="est5List.length > 0;">
+            <ul>
+              <li *ngFor="let ngname of est5List">
+                <div id="ngname">
+                  {{ngname}}
+                 </div>
+              </li>
+            </ul>
+          </ng-container>
+        </div>
+        <div id="estimate-items">
+          <div id="estimate-value">
+
+            <h1>8</h1>
+            count: {{est8List.length}}
+          </div>
+          <ng-container *ngIf="est8List.length > 0;">
+            <ul>
+              <li *ngFor="let ngname of est8List">
+                <div id="ngname">
+                  {{ngname}}
+                 </div>
+              </li>
+            </ul>
+          </ng-container>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          Average<br/><br/>
+          <div id="divCard">
+            {{estimateAverage}}
+          </div>
+        </div>
+        <div class="container">
+          Top Card <br/><br/>
+          <ng-container *ngIf="estLargeList.length > 0;">
+
+              <div *ngFor="let est of estLargeList">
+               <div id="divCard">
+                  {{est}}
+              </div>
+              </div>
+         </ng-container>
+
+        </div>
+      </div>
+    </div>
 </div>
-</td>
-</table>
 <router-outlet></router-outlet>
