@@ -50,104 +50,125 @@
   </td>
   </table>
   <!--Admin Panel-->
+
   <div style="clear: both;">
-      <div id="estimate-container" class="container">
-        <div id="estimate-items">
+    <div class="borderContainer">
+      <h2>Admin Panel</h2>
+      <button class="sendButton">
+        Get estimates
+      </button>
+    </div>
+
+    <table class="tableBorder">
+      <tr>
+        <td>
           <div id="estimate-value">
             <h1>1</h1>
             count: {{est1List.length}}
           </div>
-          <ng-container *ngIf="est1List.length > 0;">
-            <ul>
-              <li *ngFor="let ngname of est1List">
-                <div id="ngname">
-                 {{ngname}}
-                </div>
-              </li>
-            </ul>
-          </ng-container>
-        </div>
-        <div id="estimate-items">
+        </td>
+        <td>
           <div id="estimate-value">
             <h1>2</h1>
             count: {{est2List.length}}
           </div>
-          <ng-container *ngIf="est2List.length > 0;">
-            <ul>
-              <li *ngFor="let ngname of est2List">
-                <div id="ngname">
-                 {{ngname}}
-                </div>
-              </li>
-            </ul>
-          </ng-container>
-        </div>
-        <div id="estimate-items">
+        </td>
+        <td>
           <div id="estimate-value">
             <h1>3</h1>
             count: {{est3List.length}}
           </div>
-          <ng-container *ngIf="est3List.length > 0;">
-            <ul>
-              <li *ngFor="let ngname of est3List">
-                <div id="ngname">
-                  {{ngname}}
-                 </div>
-              </li>
-            </ul>
-          </ng-container>
-        </div>
-        <div id="estimate-items">
+        </td>
+        <td>
           <div id="estimate-value">
             <h1>5</h1>
             count: {{est5List.length}}
           </div>
-          <ng-container *ngIf="est5List.length > 0;">
-            <ul>
-              <li *ngFor="let ngname of est5List">
-                <div id="ngname">
-                  {{ngname}}
-                 </div>
-              </li>
-            </ul>
-          </ng-container>
-        </div>
-        <div id="estimate-items">
+        </td>
+        <td>
           <div id="estimate-value">
-
             <h1>8</h1>
             count: {{est8List.length}}
           </div>
-          <ng-container *ngIf="est8List.length > 0;">
-            <ul>
-              <li *ngFor="let ngname of est8List">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <ng-container *ngIf="est1List.length > 0;">
+            <tr *ngFor="let ngname of est1List">
+              <td>
                 <div id="ngname">
                   {{ngname}}
-                 </div>
-              </li>
-            </ul>
+                </div>
+              </td>
+            </tr>
           </ng-container>
-        </div>
-      </div>
-      <div class="container">
+          </table>
+        </td>
+        <td>
+          <table>
+            <ng-container *ngIf="est2List.length > 0;">
+            <tr *ngFor="let ngname of est2List">
+              <td>
+                <div id="ngname">
+                  {{ngname}}
+                </div>
+              </td>
+            </tr>
+          </ng-container>
+          </table>
+        </td>
+        <td>
+          <table>
+            <ng-container *ngIf="est3List.length > 0;">
+            <tr *ngFor="let ngname of est3List">
+              <td>
+                <div id="ngname">
+                  {{ngname}}
+                </div>
+              </td>
+            </tr>
+          </ng-container>
+          </table>
+        </td>
+        <td>
+          <table>
+            <ng-container *ngIf="est5List.length > 0;">
+            <tr *ngFor="let ngname of est5List">
+              <td>
+                <div id="ngname">
+                  {{ngname}}
+                </div>
+              </td>
+            </tr>
+          </ng-container>
+          </table>
+        </td>
+        <td>
+          <table>
+            <ng-container *ngIf="est8List.length > 0;">
+            <tr *ngFor="let ngname of est8List">
+              <td>
+                <div id="ngname">
+                  {{ngname}}
+                </div>
+              </td>
+            </tr>
+          </ng-container>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+      <div class="borderContainer">
         <div>
           Average<br/><br/>
           <div id="divCard">
             {{estimateAverage}}
           </div>
         </div>
-        <div class="container">
-          Top Card <br/><br/>
-          <ng-container *ngIf="estLargeList.length > 0;">
 
-              <div *ngFor="let est of estLargeList">
-               <div id="divCard">
-                  {{est}}
-              </div>
-              </div>
-         </ng-container>
-
-        </div>
       </div>
     </div>
 </div>

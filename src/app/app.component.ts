@@ -17,7 +17,7 @@ export class AppComponent {
   est5List: Array<string> = ['piotrk', 'zosia'];
   est3List: Array<string> = [];
   est2List: Array<string> = ['marysia'];
-  est1List: Array<string> = ['marian', 'zdzichu', 'grzyna'];
+  est1List: Array<string> = ['marian', 'zdzichuadfafas', 'grzyna'];
   tasksList: Array<string> = ['dana1', 'dana2', 'dana3'];
 
 
