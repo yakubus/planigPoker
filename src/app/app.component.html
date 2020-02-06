@@ -30,33 +30,59 @@
     <div class="row">
       <div class="col">
         <h2>Planing Cards</h2>
+        <hr style="height: 3px; width: 100%; background:whitesmoke; border: 0px;">
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <figure>
-          <button (click)="estimating(1)">1</button>
-        </figure>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <figure>
+                <button (click)="estimating(1)">1</button>
+              </figure>
+            </div>
+            <div class="col">
+              <figure>
+                <button (click)="estimating(2)">2</button>
+              </figure>
+            </div>
+            <div class="col">
+              <figure>
+                <button (click)="estimating(3)">3</button>
+              </figure>
+            </div>
+            <div class="col">
+              <figure>
+                <button (click)="estimating(5)">5</button>
+              </figure>
+            </div>
+            <div class="col">
+              <figure>
+                <button (click)="estimating(8)">8</button>
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col">
-        <figure>
-          <button (click)="estimating(3)">2</button>
-        </figure>
-      </div>
-      <div class="col">
-        <figure>
-          <button (click)="estimating(3)">3</button>
-        </figure>
-      </div>
-      <div class="col">
-        <figure>
-          <button (click)="estimating(5)">5</button>
-        </figure>
-      </div>
-      <div class="col">
-        <figure>
-          <button (click)="estimating(8)">8</button>
-        </figure>
+        <div class="container">
+          <div class="row">
+              <div class="col">
+                 <h2 style="color: rgb(224, 175, 12);">Your choice</h2>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col">
+            <button id="goldenbutton">{{estimate}}</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button id="selectbutton">save</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 </div>
@@ -130,6 +156,11 @@
                 {{ngname}}
           </div>
         </ng-container>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button id="selectbutton">refresh</button>
       </div>
     </div>
   </div>
