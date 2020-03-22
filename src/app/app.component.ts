@@ -1,4 +1,9 @@
+import { mongodb } from 'node_modules/mongodb';
 import { Component } from '@angular/core';
+
+const url = 'mongodb://127.0.0.1:27017';
+const dbname = 'mongo-test';
+
 
 @Component({
   selector: 'app-root',
@@ -20,12 +25,16 @@ export class AppComponent {
   est1List: Array<string> = ['marian', 'zdzichuadfafas', 'grzyna'];
   tasksList: Array<string> = ['dana1', 'dana2', 'dana3'];
 
-
-
-
   estimating(est) {
     this.estimate = est;
     console.log(this.estimate);
+    @mongodb.connect(url, {} , (error, client) => {
+      if (error) {
+        console.log(error);
+      }
+      console.log('db is ok');
+
+      } )
   }
 
 
